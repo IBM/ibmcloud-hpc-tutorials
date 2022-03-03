@@ -1,0 +1,92 @@
+[
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/01-hpc-overview.html",
+	"title": "HPC on Cloud Overview",
+	"tags": [],
+	"description": "",
+	"content": "Current topics === TO EXPAND ===:\n  Cloud Basics introduces the basic building blocks of cloud computing\n  Standing up an LSF Cluster shows how to set up a HPC cluster on IBM Cloud\n  HPC File Systems discusses the options for a high-performance parallel file system\n  Autoscaling with LAMMPS demonstrates the autoscaling capability using LAMMPS as the example workload.\n  Hybrid Cloud Computing explores the exciting possiblities of leveraging hybrid cloud for HPC\n  We recommend you take these labs in the order presented as some dependencies exists between them, but feel free to change the order based on your comfort level.\n"
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/02-setup-lsf-cluster.html",
+	"title": "Standing up an LSF Cluster",
+	"tags": ["HPC", "Introduction", "LSF", "Optional"],
+	"description": "",
+	"content": "IBM Spectrum LSF is part of the HPC Clustering Services on IBM Cloud to enable users to stand up a HPC environment within minutes. LSF is an advanced workload management solution for demanding HPC environments. HPC cluster deployment starts with the definition of the desired cluster configuration; for example, count of management nodes, worker nodes, amount of storage and so on. Open-source technologies like Terraform and Ansible have been used to automate the provisioning and configuration of all associated IBM Cloud VPC resources and LSF.\nIn this section, you are using the IBM Spectrum LSF catalog tile to create a HPC cluster in IBM Cloud and run a LSF job as you would on-premises. This includes the following steps:\n Prepare your SSH key and IBM Cloud API keys. Configure cluster parameters from your IBM Cloud web console. Create your first cluster. Submit a sample job and check what is happening in the background. Delete the cluster.  "
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/03-bursting.html",
+	"title": "Cloud Bursting",
+	"tags": ["HPC", "Introduction", "LSF", "Optional"],
+	"description": "",
+	"content": "IBM Cloud offers virtual private clouds (VPCs), which enable elastic provisioning of x86 virtual servers with the pay-as-you-go model. Users can optimize both the cost and performance of their target workloads by maintaining the number of virtual servers and their resource configurations. VPCs support various instance flavors of virtual machines with from 1 to 128 virtual CPUs, from 4GB to 1TB RAM, and various capacity and performance settings of storage and networking.\nIn this post, we focus on an automation package for Spectrum LSF.\nIBM Spectrum LSF is widely used to manage parallel distributed HPC workloads. The automation package deploys LSF management and compute hosts with a shared filesystem. It also configures auto-scaling of compute hosts with its resource connector for IBM Cloud. The deployed cluster runs the Red Hat Enterprise Linux 7.7 with pre-installed software packages such as OpenMPI.\n The automation package enables users to quickly create an HPC cluster on IBM Cloud. Users can import data to the shared filesystem and submit HPC jobs using the bsub command. The automation can be regarded as a quick starter kit for HPC in the cloud, but also it enables cloud bursting, a technique to deal with the temporal insufficiency of computing resources at an on-premise cluster using the elastic cloud infrastructures.\nLSF can support cloud bursting using multi-cluster setups and job forwarding. With these features, LSF can forward jobs from on-premise to a cloud cluster when the on-premise cannot satisfy requests for computing resources. On the other hand, the cloud cluster can be scaled down to save the costs for compute nodes during idle time.\nThe automation package also supports the configuration of a virtual private network (VPN) for an LSF cluster. VPN enables secure network connections between on-premise and cloud clusters as if they were directly connected. On top of the VPN connectivity, two LSF clusters can securely share cluster information and forward jobs over the internet.\nThis tutorial consists of three parts:\n Setting up VPN Setting up multi-cluster and job forwarding Trying simple workloads with cloud bursting.  "
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/tags/hpc.html",
+	"title": "HPC",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/tags/introduction.html",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/tags/lsf.html",
+	"title": "LSF",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/tags/optional.html",
+	"title": "Optional",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/tags.html",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/",
+	"title": "HPC on IBM Cloud Tutorials",
+	"tags": [],
+	"description": "",
+	"content": "Welcome to HPC on IBM Cloud Tutorials === SOME INTRODUCTION ===\nSelect a topic from the nagivation panel on the left or continue to HPC on Cloud Overview.\n"
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/categories.html",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/conferences.html",
+	"title": "Conferences Workshops",
+	"tags": [],
+	"description": "",
+	"content": "List of workshops given at confernces    Name Description     reInvent 2021 AWS ParallelClusterAPI Introduction to the AWS ParallelCluster API and the PCluster Manager web UI to manage clusters   Supercomputing 2021 Tutorial Collection of labs created for the full-day tutorial delivered by the AWS HPC team at SC21   Supercomputing 2020 Tutorial Find the labs created for the full-day tutorial delivered by the AWS HPC team at SC20   Supercomputing 2019 Tutorial Collection of labs created for the first full-day tutorial delivered by the AWS HPC team at SC19    "
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/authors.html",
+	"title": "Credits",
+	"tags": [],
+	"description": "",
+	"content": " I-hsin Chung Ming Hung Cheng Constantinos Evangelinos Lixiang Luo Dale Pearson Seetharami Seelam Robert Walkup Hui-fang Wen Chih Chieh Yang  "
+},
+{
+	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/external.html",
+	"title": "External Workshops",
+	"tags": [],
+	"description": "",
+	"content": "List of External workshops    Name Description     Advanced Slurm on ParallelCluster This workshop shows advanced techniques with Slurm on ParallelCluster, including federation, accounting, and using the Slurm REST API with Jupyter notebooks   Setting up a client library for the Slurm REST API A Jupyter notebook walkthrough of building and using a Python client library for the Slurm REST API    "
+}]
