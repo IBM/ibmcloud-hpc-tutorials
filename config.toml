@@ -1,0 +1,81 @@
+baseURL = "https://www.hpcworkshops.com"
+languageCode = "en-us"
+title = "HPC on IBM Cloud Tutorials"
+theme = "hugo-theme-learn"
+uglyurls = true
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+
+[blackfriday]
+hrefTargetBlank = true
+
+[params]
+# --[TBD]--
+editURL = "https://github.ibm.com/hybrid-cloud-infrastructure-research/hpc_ibmcloud_tutorial/tree/master/content/"
+themeVariant = "mine"
+showVisitedLinks = true
+description = "HPC on IBM Cloud Tutorials"
+disableSearch = false
+disableAssetsBusting = false
+disableLanguageSwitchingButton = true
+disableShortcutsTitle = false
+
+
+[outputs]
+home = [ "HTML", "AMP", "RSS", "JSON"]
+page = [ "HTML", "AMP"]
+
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
+
+#[[menu.shortcuts]]
+#name = "<i class='fas fa-flask'></i> Conferences Worshops"
+#url = "/conferences.html"
+#weight = 21
+#[[menu.shortcuts]]
+#name = "<i class='fas fa-bullhorn'></i> External Worshops"
+#url = "/external.html"
+#weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github"
+# --[TBD]--
+url = "https://github.ibm.com/hybrid-cloud-infrastructure-research/hpc_ibmcloud_tutorial"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-bookmark'></i> IBM Cloud HPC"
+url = "https://www.ibm.com/cloud/hpc"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-users'></i> Authors"
+url = "/authors.html"
+weight = 23
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-envelope'></i> Feedback / Questions?"
+# --[TBD]--
+url = "mailto:cloudhpc-tutorial@ibm.com"
+weight = 30
+
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 40
