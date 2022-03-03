@@ -14,22 +14,22 @@
 
     <link rel="icon" href="/ibmcloud-hpc-tutorials/images/favicon.png" type="image/png">
 
-    <title>Cloud Bursting :: HPC on IBM Cloud Tutorials</title>
+    <title>HPC on IBM Cloud Tutorials :: HPC on IBM Cloud Tutorials</title>
 
     
-    <link href="/ibmcloud-hpc-tutorials/css/nucleus.css?1646338488" rel="stylesheet">
-    <link href="/ibmcloud-hpc-tutorials/css/fontawesome-all.css?1646338488" rel="stylesheet">
-    <link href="/ibmcloud-hpc-tutorials/css/hybrid.css?1646338488" rel="stylesheet">
-    <link href="/ibmcloud-hpc-tutorials/css/featherlight.min.css?1646338488" rel="stylesheet">
-    <link href="/ibmcloud-hpc-tutorials/css/perfect-scrollbar.min.css?1646338488" rel="stylesheet">
-    <link href="/ibmcloud-hpc-tutorials/css/auto-complete.css?1646338488" rel="stylesheet">
-    <link href="/ibmcloud-hpc-tutorials/css/theme.css?1646338488" rel="stylesheet">
-    <link href="/ibmcloud-hpc-tutorials/css/hugo-theme.css?1646338488" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/nucleus.css?1646338457" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/fontawesome-all.css?1646338457" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/hybrid.css?1646338457" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/featherlight.min.css?1646338457" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/perfect-scrollbar.min.css?1646338457" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/auto-complete.css?1646338457" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/theme.css?1646338457" rel="stylesheet">
+    <link href="/ibmcloud-hpc-tutorials/css/hugo-theme.css?1646338457" rel="stylesheet">
     
-      <link href="/ibmcloud-hpc-tutorials/css/theme-mine.css?1646338488" rel="stylesheet">
+      <link href="/ibmcloud-hpc-tutorials/css/theme-mine.css?1646338457" rel="stylesheet">
     
 
-    <script src="/ibmcloud-hpc-tutorials/js/jquery-3.5.1.min.js?1646338488"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/jquery-3.5.1.min.js?1646338457"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -39,7 +39,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/ibmcloud-hpc-tutorials/03-bursting.html">
+  <body class="" data-url="/ibmcloud-hpc-tutorials/amp/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -56,14 +56,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/ibmcloud-hpc-tutorials/js/lunr.min.js?1646338488"></script>
-<script type="text/javascript" src="/ibmcloud-hpc-tutorials/js/auto-complete.js?1646338488"></script>
+<script type="text/javascript" src="/ibmcloud-hpc-tutorials/js/lunr.min.js?1646338457"></script>
+<script type="text/javascript" src="/ibmcloud-hpc-tutorials/js/auto-complete.js?1646338457"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ibm.github.io\/ibmcloud-hpc-tutorials\/";
     
 </script>
-<script type="text/javascript" src="/ibmcloud-hpc-tutorials/js/search.js?1646338488"></script>
+<script type="text/javascript" src="/ibmcloud-hpc-tutorials/js/search.js?1646338457"></script>
 
     
   </div>
@@ -143,8 +143,8 @@
   
     
     <li data-nav-id="/ibmcloud-hpc-tutorials/03-bursting.html" title="Cloud Bursting" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/ibmcloud-hpc-tutorials/03-bursting.html">
@@ -227,93 +227,23 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
-              <div>
-                <div id="top-bar">
-                
-                  
-                  
-                  
-                  <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/IBM/ibmcloud-hpc-tutorials03-bursting/_index.md" target="blank">
-                      <i class="fas fa-code-branch"></i>
-                      <span id="top-github-link-text">Edit this page</span>
-                    </a>
-                  </div>
-                  
-                
-                
-                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                    <span id="sidebar-toggle-span">
-                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
-                          <i class="fa fa-bars"></i>
-                        </a>
-                    </span>
-                  
-                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
-                  
-                  <span class="links">
-                    
-          
-          
-            
-            
-          
-          
-            <a href='/ibmcloud-hpc-tutorials/'>HPC on IBM Cloud Tutorials</a> > Cloud Bursting
-          
-        
-          
-        
-                  </span>
-                </div>
-                
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents"></nav>
-    </div>
-</div>
-
-                
-              </div>
-            </div>
-            
 
         
         <div id="body-inner">
           
-            <h1>Cloud Bursting</h1>
-          
 
         
 
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
 
-
-	<p>IBM Cloud offers virtual private clouds (VPCs), which enable elastic provisioning of x86 virtual servers with the pay-as-you-go model. Users can optimize both the cost and performance of their target workloads by maintaining the number of virtual servers and their resource configurations. VPCs support various instance flavors of virtual machines with from 1 to 128 virtual CPUs, from 4GB to 1TB RAM, and various capacity and performance settings of storage and networking.</p>
-<p>In this post, we focus on an automation package for Spectrum LSF.</p>
-<p><a href="https://www.ibm.com/cloud/blog/announcements/ibm-spectrum-lsf-is-now-available-on-ibm-cloud">IBM Spectrum LSF</a> is widely used to manage parallel distributed HPC workloads. The automation package deploys LSF management and compute hosts with a shared filesystem. It also configures auto-scaling of compute hosts with its resource connector for IBM Cloud. The deployed cluster runs the Red Hat Enterprise Linux 7.7 with pre-installed software packages such as OpenMPI.</p>
-<!-- raw HTML omitted -->
-<figure><img src="/images/bursting/bursting.png"
-         alt="bursting" width="640px"/>
-</figure>
-
-<p>The automation package enables users to quickly create an HPC cluster on IBM Cloud. Users can import data to the shared filesystem and submit HPC jobs using the bsub command. The automation can be regarded as a quick starter kit for HPC in the cloud, but also it enables cloud bursting, a technique to deal with the temporal insufficiency of computing resources at an on-premise cluster using the elastic cloud infrastructures.</p>
-<p>LSF can support <strong>cloud bursting</strong> using multi-cluster setups and job forwarding. With these features, LSF can forward jobs from on-premise to a cloud cluster when the on-premise cannot satisfy requests for computing resources. On the other hand, the cloud cluster can be scaled down to save the costs for compute nodes during idle time.</p>
-<p>The automation package also supports the configuration of a virtual private network (VPN) for an LSF cluster. VPN enables secure network connections between on-premise and cloud clusters as if they were directly connected. On top of the VPN connectivity, two LSF clusters can securely share cluster information and forward jobs over the internet.</p>
-<p>This tutorial consists of three parts:</p>
-<ul>
-<li>Setting up VPN</li>
-<li>Setting up multi-cluster and job forwarding</li>
-<li>Trying simple workloads with cloud bursting.</li>
-</ul>
-
-
-
-
-
-<footer class=" footline" >
+ 
+<h1 id="welcome-to-hpc-on-ibm-cloud-tutorials">Welcome to HPC on IBM Cloud Tutorials</h1>
+<p><strong>=== SOME INTRODUCTION ===</strong></p>
+<p>Select a topic from the nagivation panel on the left or continue to <em>HPC on Cloud Overview</em>.</p>
 	
-</footer>
-
+  
         
         </div>
         
@@ -380,7 +310,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -401,7 +330,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ibmcloud-hpc-tutorials/02-setup-lsf-cluster.html" title="Standing up an LSF Cluster"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ibmcloud-hpc-tutorials/03-bursting.html" title="Cloud Bursting"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/ibmcloud-hpc-tutorials/01-hpc-overview.html" title="HPC on Cloud Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -414,19 +343,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/ibmcloud-hpc-tutorials/js/clipboard.min.js?1646338488"></script>
-    <script src="/ibmcloud-hpc-tutorials/js/perfect-scrollbar.min.js?1646338488"></script>
-    <script src="/ibmcloud-hpc-tutorials/js/perfect-scrollbar.jquery.min.js?1646338488"></script>
-    <script src="/ibmcloud-hpc-tutorials/js/jquery.sticky.js?1646338488"></script>
-    <script src="/ibmcloud-hpc-tutorials/js/featherlight.min.js?1646338488"></script>
-    <script src="/ibmcloud-hpc-tutorials/js/highlight.pack.js?1646338488"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/clipboard.min.js?1646338457"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/perfect-scrollbar.min.js?1646338457"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/perfect-scrollbar.jquery.min.js?1646338457"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/jquery.sticky.js?1646338457"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/featherlight.min.js?1646338457"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/highlight.pack.js?1646338457"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/ibmcloud-hpc-tutorials/js/modernizr.custom-3.6.0.js?1646338488"></script>
-    <script src="/ibmcloud-hpc-tutorials/js/learn.js?1646338488"></script>
-    <script src="/ibmcloud-hpc-tutorials/js/hugo-learn.js?1646338488"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/modernizr.custom-3.6.0.js?1646338457"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/learn.js?1646338457"></script>
+    <script src="/ibmcloud-hpc-tutorials/js/hugo-learn.js?1646338457"></script>
     
         
-            <script src="/ibmcloud-hpc-tutorials/mermaid/mermaid.js?1646338488"></script>
+            <script src="/ibmcloud-hpc-tutorials/mermaid/mermaid.js?1646338457"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
@@ -436,3 +365,4 @@
 
   </body>
 </html>
+

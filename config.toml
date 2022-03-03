@@ -1,4 +1,4 @@
-baseURL = "https://www.hpcworkshops.com"
+baseURL = "https://ibm.github.io/ibmcloud-hpc-tutorials"
 languageCode = "en-us"
 title = "HPC on IBM Cloud Tutorials"
 theme = "hugo-theme-learn"
@@ -10,8 +10,7 @@ pygmentsCodeFences = true
 hrefTargetBlank = true
 
 [params]
-# --[TBD]--
-editURL = "https://github.ibm.com/hybrid-cloud-infrastructure-research/hpc_ibmcloud_tutorial/tree/master/content/"
+editURL = "https://github.com/IBM/ibmcloud-hpc-tutorials"
 themeVariant = "mine"
 showVisitedLinks = true
 description = "HPC on IBM Cloud Tutorials"
