@@ -1,0 +1,54 @@
+baseURL = "/"
+languageCode = "en-US"
+#defaultContentLanguage = "en"
+
+title = "HPC on IBM Cloud Tutorials"
+theme = "learn"
+themesdir = "themes"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[blackfriday]
+hrefTargetBlank = true
+
+[params]
+editURL = "https://github.com/IBM/ibmcloud-hpc-tutorials"
+themeVariant = "ibm"
+showVisitedLinks = false
+description = "HPC on IBM Cloud Tutorials"
+disableSearch = false
+disableAssetsBusting = false
+disableLanguageSwitchingButton = true
+disableShortcutsTitle = false
+
+
+[outputs]
+home = [ "HTML", "AMP", "RSS", "JSON"]
+page = [ "HTML", "AMP"]
+
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github"
+url = "https://github.com/IBM/ibmcloud-hpc-tutorials"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-bookmark'></i> IBM Cloud HPC"
+url = "https://www.ibm.com/cloud/hpc"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-users'></i> Authors"
+url = "/authors.html"
+weight = 23
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-envelope'></i> Feedback / Questions?"
+url = "https://github.com/IBM/ibmcloud-hpc-tutorials/issues"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 40
+
