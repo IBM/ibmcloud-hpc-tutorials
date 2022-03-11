@@ -36,20 +36,20 @@ weight = 10
 [[menu.shortcuts]]
 name = "<i class='fas fa-bookmark'></i> IBM Cloud HPC"
 url = "https://www.ibm.com/cloud/hpc"
-weight = 10
+weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-users'></i> Authors"
 url = "/authors.html"
-weight = 23
+weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-envelope'></i> Feedback / Questions?"
 url = "https://github.com/IBM/ibmcloud-hpc-tutorials/issues"
-weight = 30
+weight = 40
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
-weight = 40
+weight = 50
 
