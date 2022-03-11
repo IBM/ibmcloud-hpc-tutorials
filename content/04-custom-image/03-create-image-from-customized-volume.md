@@ -2,7 +2,7 @@
 title: "Create Image From Customized Volume"
 date: 2022-01-24T15:57:51-05:00
 weight: 30
-draft: true
+draft: false
 ---
 
 Now, we go back to the Cloud Shell for creating the new custom image.

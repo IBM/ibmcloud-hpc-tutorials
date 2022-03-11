@@ -1,7 +1,7 @@
 ---
 title: "Set up multi-cluster and job forwarding"
 date: 2022-01-05T01:00:00-01:00
-draft: true
+draft: false
 weight: 20 
 tags: ["burst"] 
 ---

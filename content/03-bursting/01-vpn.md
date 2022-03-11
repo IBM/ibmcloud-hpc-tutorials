@@ -1,7 +1,7 @@
 ---
 title: "Set up VPN"
 date: 2022-01-02T01:00:00-01:00
-draft: true
+draft: false
 weight: 10 
 tags: ["burst"] 
 ---

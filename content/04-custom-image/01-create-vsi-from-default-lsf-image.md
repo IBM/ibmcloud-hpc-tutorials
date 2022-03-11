@@ -2,7 +2,7 @@
 title: "Create VSI From Default LSF Image"
 date: 2022-01-24T15:54:40-05:00
 weight: 10
-draft: true
+draft: false
 ---
 
 
