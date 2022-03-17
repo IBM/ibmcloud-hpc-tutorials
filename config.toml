@@ -1,4 +1,5 @@
-baseURL = "https://ibm.github.io/ibmcloud-hpc-tutorials"
+#baseURL = "https://ibm.github.io/ibmcloud-hpc-tutorials"
+baseURL = "/"
 languageCode = "en-US"
 #defaultContentLanguage = "en"
 
