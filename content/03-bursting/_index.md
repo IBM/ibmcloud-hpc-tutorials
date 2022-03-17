@@ -13,8 +13,8 @@ In this post, we focus on an automation package for Spectrum LSF.
 
 [IBM Spectrum LSF](https://www.ibm.com/cloud/blog/announcements/ibm-spectrum-lsf-is-now-available-on-ibm-cloud) is widely used to manage parallel distributed HPC workloads. The automation package deploys LSF management and compute hosts with a shared filesystem. It also configures auto-scaling of compute hosts with its resource connector for IBM Cloud. The deployed cluster runs the Red Hat Enterprise Linux 7.7 with pre-installed software packages such as OpenMPI.
 
-<!--![bursting](/images/bursting/bursting.png)-->
-{{< figure src="/images/bursting/bursting.png" alt="bursting" width="640px" >}}
+![bursting](bursting.png)
+<!--{{< figure src="/images/bursting/bursting.png" alt="bursting" width="640px" >}}-->
 
 The automation package enables users to quickly create an HPC cluster on IBM Cloud. Users can import data to the shared filesystem and submit HPC jobs using the bsub command. The automation can be regarded as a quick starter kit for HPC in the cloud, but also it enables cloud bursting, a technique to deal with the temporal insufficiency of computing resources at an on-premise cluster using the elastic cloud infrastructures.
 

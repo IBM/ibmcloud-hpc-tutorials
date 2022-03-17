@@ -1,7 +1,7 @@
 ---
 title: "Prepare SSH and API Keys"
 date: 2021-12-08T10:01:27-05:00
-draft: true
+draft: false
 weight: 40 
 tags: ["LSF"] 
 ---
