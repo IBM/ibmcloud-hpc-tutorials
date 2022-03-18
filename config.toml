@@ -1,10 +1,10 @@
 baseURL = "https://ibm.github.io/ibmcloud-hpc-tutorials/"
-#baseURL = "/"
 languageCode = "en-US"
 #defaultContentLanguage = "en"
 
 title = "HPC on IBM Cloud Tutorials"
 theme = "learn"
+canonifyurls = true # this is a required workaround for Github Pages baseUrl with subdirectory
 themesdir = "themes"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true

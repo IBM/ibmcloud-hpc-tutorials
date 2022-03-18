@@ -12,9 +12,7 @@ Before you begin, make sure to complete the first four steps for [getting starte
 
 The following figure is an example of a VPN deployment.
 
-<!--![vpn](/images/bursting/hpcc_vpn-diagram.png)-->
-![vpn](hpcc_vpn-diagram.png)
-<!--{{< figure src="/images/bursting/hpcc_vpn-diagram.png" alt="vpn" width="1024" >}}-->
+{{< figure src="/images/bursting/hpcc_vpn-diagram.png" alt="vpn" width="1024" >}}
 
 This example links a VPN gateway to the subnet for LSF nodes. By doing this, local clients can directly access them with private IP addresses (for example, 192.168.3.21 to 10.248.0.37).
 
