@@ -18,7 +18,7 @@
 	"title": "HPC on Cloud Overview",
 	"tags": [],
 	"description": "",
-	"content": "Current topics === TO EXPAND ===:\n  Cloud Basics introduces the basic building blocks of cloud computing\n  Standing up an LSF Cluster shows how to set up a HPC cluster on IBM Cloud\n  HPC File Systems discusses the options for a high-performance parallel file system\n  Autoscaling with LAMMPS demonstrates the autoscaling capability using LAMMPS as the example workload.\n  Hybrid Cloud Computing explores the exciting possiblities of leveraging hybrid cloud for HPC\n  We recommend you take these labs in the order presented as some dependencies exists between them, but feel free to change the order based on your comfort level.\n"
+	"content": "High Performance Computing (HPC) in the IBM Cloud can accelerate results by scaling a vast number of tasks and reduce costs by optimizing the right technology to meet your specifc goals. The cloud is always ready whenever you are ready to scale up. Whether you need a single CPU core or tens of thousands cores, a traditional MPI-oriented cluster or fully containerized Openshift cluster, IBM Cloud has the solution to meet the needs.\nIn this section, we will go through the basic building blocks of IBM Cloud Gen2.\n"
 },
 {
 	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/04-custom-image/02-customize-software-on-the-vsi/",
@@ -158,7 +158,7 @@
 	"title": "HPC on IBM Cloud Tutorials",
 	"tags": [],
 	"description": "",
-	"content": "Welcome to HPC on IBM Cloud Tutorials === SOME INTRODUCTION ===\nSelect a topic from the nagivation panel on the left or continue to HPC on Cloud Overview.\n"
+	"content": "Welcome to HPC on IBM Cloud Tutorials This website is a growing open-source documentation project for \u0026ldquo;HPC on IBM Cloud\u0026rdquo; topics. We aim to provide tailored, step-by-step tutorials on various tasks in utilizing public cloud resources for HPC workloads. We hope to smooth the learning curve for the transition from traditional on-prem HPC clusters to cloud-based or even cloud-native workflows. Most information here are derived from references and tutorials from IBM Cloud\u0026rsquo;s online articles.\nCurrent topics:\n  Cloud Basics introduces the building blocks of cloud computing and basic preparations for going through the other topics.\n  Standing up an LSF Cluster shows how to set up a HPC cluster on IBM Cloud, including how to use the autoscaling capability.\n  Hybrid Cloud Computing explores the exciting possiblities of leveraging hybrid cloud for HPC\n  HPC File Systems discusses the options for a high-performance parallel file system\n  Select a topic from the nagivation panel on the left or continue to HPC on Cloud Overview.\n"
 },
 {
 	"uri": "https://ibm.github.io/ibmcloud-hpc-tutorials/categories/",
