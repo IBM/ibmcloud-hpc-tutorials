@@ -40,7 +40,7 @@ weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-users'></i> Authors"
-url = "/authors.html"
+url = "authors.html"
 weight = 30
 
 [[menu.shortcuts]]
