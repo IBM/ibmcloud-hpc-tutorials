@@ -13,7 +13,7 @@ metaDataFormat = "yaml"
 hrefTargetBlank = true
 
 [params]
-editURL = "https://github.com/IBM/ibmcloud-hpc-tutorials"
+editURL = "https://github.com/IBM/ibmcloud-hpc-tutorials/tree/main/content/"
 themeVariant = "ibm"
 showVisitedLinks = false
 description = "HPC on IBM Cloud Tutorials"
