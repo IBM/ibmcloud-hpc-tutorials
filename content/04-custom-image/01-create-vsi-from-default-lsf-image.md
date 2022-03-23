@@ -4,11 +4,15 @@ date: 2022-01-24T15:54:40-05:00
 weight: 10
 draft: false
 ---
-
-
 ## Start IBM Cloud Shell from the browser
 
-(Insert image here)
+Find the icon to lauch Cloud Shell in the dash board:
+
+![Cloud Shell Icon](/images/custom-image/cloud-shell-1.png)
+
+It will create another browser window with the Cloud Shell:
+
+![Cloud Shell](/images/custom-image/cloud-shell-2.png)
 
 In the Cloud Shell, follow the next steps to create a VSI (assuming bash):
 
@@ -29,7 +33,8 @@ KEY_NAME=ccyang-pub-key
 RESOURCE_GROUP_NAME=Default
 ```
 
-(explain how to get the CLUSTER_IMG_ID)
+The `CLUSTER_IMG_ID` can be found from [the open-source terraform script](https://github.com/IBM-Cloud/hpc-cluster-lsf/blob/main/image-map.tf) in IBM Cloud [hpc-cluster-lsf](https://github.com/IBM-Cloud/hpc-cluster-lsf) github repository.
+You can choose the OS you wish to use. You should make sure the region key is the same as where you will create the VSI and where the custom image should be.
 
 2. Create a VSI 
 ```

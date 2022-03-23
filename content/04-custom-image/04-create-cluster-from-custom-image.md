@@ -5,4 +5,4 @@ weight: 40
 draft: false
 ---
 
-(To be completed when the custom image feature is fixed)
+The last step is to use the newly created image to create a new LSF cluster. We are working on adding the description for how to do so and we will add it very soon.

@@ -22,7 +22,7 @@ SOURCE_VOLUME_ID=$(ibmcloud is instance ${CUSTOM_IMG_VSI_NAME} --output JSON | j
 ibmcloud is image-create ${CUSTOM_IMG_NAME} --source-volume ${SOURCE_VOLUME_ID}
 ```
 
-This step can take some time depending on the image size. You can check webpage(where to check? take screenshot) for the status of the image creation.
+This step can take some time depending on the image size. You can check the webpage of the images (Navigation Menu --> VPC Infrastructure --> Custom images) for the status of the image creation.
 
 3. When the image is created, we can delete the VSI that is no longer needed
 
