@@ -7,7 +7,7 @@ theme = "learn"
 canonifyurls = true # this is a required workaround for Github Pages baseUrl with subdirectory
 themesdir = "themes"
 metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= true
+#defaultContentLanguageInSubdir= true
 
 [blackfriday]
 hrefTargetBlank = true
