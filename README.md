@@ -19,7 +19,7 @@ git clone --recurse-submodules git@github.com:IBM/ibmcloud-hpc-tutorials.git
 ```bash
 cd ibmcloud-hpc-tutorials
 hugo
-hugo serve -D
+hugo server -D
 ```
 4. Point your browser to http://localhost:1313/ibmcloud-hpc-tutorials/
 
