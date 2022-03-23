@@ -4,7 +4,7 @@ languageCode = "en-US"
 
 title = "HPC on IBM Cloud Tutorials"
 theme = "learn"
-canonifyurls = true # this is a required workaround for Github Pages baseUrl with subdirectory
+canonifyurls = true # fix for Github Pages baseUrl with subdirectory
 themesdir = "themes"
 metaDataFormat = "yaml"
 #defaultContentLanguageInSubdir= true
@@ -40,7 +40,7 @@ weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-users'></i> Authors"
-url = "/authors.html"
+url = "/ibmcloud-hpc-tutorials/authors/"
 weight = 30
 
 [[menu.shortcuts]]
@@ -50,6 +50,6 @@ weight = 40
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> Tags"
-url = "/tags"
+url = "/ibmcloud-hpc-tutorials/tags"
 weight = 50
 
