@@ -6,7 +6,7 @@ weight: 20
 tags: ["burst"] 
 ---
 
-et up the LSF multi-cluster and job forwarding. This tutorial assumes that the small on-premise cluster labeled with "OnPremiseCluster" uses a subnet `192.168.3.0/24`. The cluster runs a master node at `192.168.3.21` (on-premise-master) and two single-CPU workers (i.e., up to two CPUs are available for jobs). The cloud cluster labeled with "HPCCluster" uses a subnet `10.248.0.32/27` and its master uses `10.248.0.37` (icgen2host-10-248-0-37) without any static workers created. Both of the configuration directories are in `/opt/ibm/lsf/conf`, but you can change the directory depending on your cluster configuration.
+Set up the LSF multi-cluster and job forwarding. This tutorial assumes that the small on-premise cluster labeled with "OnPremiseCluster" uses a subnet `192.168.3.0/24`. The cluster runs a master node at `192.168.3.21` (on-premise-master) and two single-CPU workers (i.e., up to two CPUs are available for jobs). The cloud cluster labeled with "HPCCluster" uses a subnet `10.248.0.32/27` and its master uses `10.248.0.37` (icgen2host-10-248-0-37) without any static workers created. Both of the configuration directories are in `/opt/ibm/lsf/conf`, but you can change the directory depending on your cluster configuration.
 
 1. The following is an example of the `/etc/hosts` file for the cloud cluster. You need to make sure that the hostnames for the LSF masters are DNS-resolvable.
 
