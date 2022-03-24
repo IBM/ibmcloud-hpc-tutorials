@@ -6,7 +6,29 @@ weight: 40
 tags: ["LSF"] 
 ---
 
-### Create Your SSH KEY
+### Create Your SSL KEY key pair (if you don't have one already)
+
+VSI access do not allow password-based authentication by default, so this step is essential
+for anyone to get access to the VSIs after they are created. If you do not have SSH keys on
+your machine where you plan to log in to your HPC cluster, use the **_ssh-keygen_** command to generate.
+This command is commonly available in modern operating systems and can be run by any user.
+In Linux, for example:
+```
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/someone/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/someone/.ssh/id_rsa.
+Your public key has been saved in /home/someone/.ssh/id_rsa.pub.
+```
+Copy and paste the content in /home/someone/.ssh/id_rsa.pub to the public key field in Step 2 below.
+
+### Create Your IBM Cloud SSH Key
+This step allows you to upload the public key of your existing public-private SSL key pair.
+The public key then becomes a managed resource on IBM Cloud, which can be referred to by its resource id
+during creation process of other resources, such as VSIs.
+
 After you sign in to https://cloud.ibm.com/ with your account, start with the Navigation Menu on the dashboard in the top left
 corner of the page:
 
@@ -20,22 +42,15 @@ corner of the page:
 
 ![SSHKEY](/images/setup-lsf-cluster/sshkey.png)
 
-If you do not have SSH keys on your machine where you plan to log in to your HPC cluster, use the **_ssh-keygen_** command to generate.
-```
-[root@hf-ocp-login1 ~]# ssh-keygen
-Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa): 
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /root/.ssh/id_rsa.
-Your public key has been saved in /root/.ssh/id_rsa.pub.
-```
-Copy and paste the content in /root/.ssh/id_rsa.pub to the public key field in Step 2.
 
 Please remember your ssh key name (e.g., demo-ssh-key), the resource group name and the region you have selected. You will need to use
 those in the next step when creating a cluster.
 
 ### Create Your IBM Cloud API Key
+This step allows you to create an **API key** from IBM Cloud. The API key is usually kept on the user's local machine,
+which can be used as an authentication mechanism for IBM Cloud API calls. Without the API key,
+many API calls would require you to re-authenticate with other, more cumbersome, mechanisms.
+
 1.   Go to _**Manage**_ > _**Access (IAM)**_
 2.   Click **_API keys_**
 3.   Click **_Create an IBM Cloud API key_**
