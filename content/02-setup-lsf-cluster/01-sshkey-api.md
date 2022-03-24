@@ -27,7 +27,7 @@ Copy and paste the content in /home/someone/.ssh/id_rsa.pub to the public key fi
 ### Create Your IBM Cloud SSH Key
 This step allows you to upload the public key of your existing public-private SSL key pair.
 The public key then becomes a managed resource on IBM Cloud, which can be referred to by its resource id
-during creation process of other resources, such as VSIs.
+during creation processes of other resources, such as VSIs.
 
 After you sign in to https://cloud.ibm.com/ with your account, start with the Navigation Menu on the dashboard in the top left
 corner of the page:

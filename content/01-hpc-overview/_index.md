@@ -26,4 +26,7 @@ private clouds, while leveraging public cloud resources and savings.
 | Unit of compute node | A bare-metal node, fixed configuration | A virtual machine instance (VSI), flexible |
 | Interconnect         | Physical Ethernet, Infiniband, etc. | Software defined network         |
 
-
+When creating a cluster on IBM Cloud, a "VPC" refers to the
+software-defined network at a specific datacenter. Each VPC consists of one or multiple
+subnets, each of which is mapped to a zone within that datacenter. VSIs will be created
+within subnets.
