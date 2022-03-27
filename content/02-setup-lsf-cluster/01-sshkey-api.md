@@ -29,6 +29,12 @@ This step allows you to upload the public key of your existing public-private SS
 The public key then becomes a managed resource on IBM Cloud, which can be referred to by its resource id
 during creation processes of other resources, such as VSIs.
 
+When selecting the region, please use one of these 4 regions 
+* us-south (Dallas)
+* us-east (Washington DC)
+* eu-gb (London)
+* eu-de (Frankfurt)
+
 After you sign in to https://cloud.ibm.com/ with your account, start with the Navigation Menu on the dashboard in the top left
 corner of the page:
 
@@ -50,6 +56,7 @@ those in the next step when creating a cluster.
 This step allows you to create an **API key** from IBM Cloud. The API key is usually kept on the user's local machine,
 which can be used as an authentication mechanism for IBM Cloud API calls. Without the API key,
 many API calls would require you to re-authenticate with other, more cumbersome, mechanisms.
+API keys are not bound to any specific datacenter.
 
 1.   Go to _**Manage**_ > _**Access (IAM)**_
 2.   Click **_API keys_**

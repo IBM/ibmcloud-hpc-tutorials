@@ -22,6 +22,8 @@ LSF can support **cloud bursting** using multi-cluster setups and job forwarding
 The automation package also supports the configuration of a virtual private network (VPN) for an LSF cluster. VPN enables secure network connections between on-premise and cloud clusters as if they were directly connected. On top of the VPN connectivity, two LSF clusters can securely share cluster information and forward jobs over the internet.
 
 This tutorial consists of three parts:
-* Setting up VPN
-* Setting up multi-cluster and job forwarding
-* Trying simple workloads with cloud bursting.
+1. Reconfiguring an existing LSF cluster on IBM Cloud to emulate an private "On-premise Cluster" with its own VPN server
+2. Creating a new LSF cluster on IBM Cloud, the "Cloud Cluster", which is the target of the workload bursting
+3. Setting up VPN connection between these two cluster
+4. Setting up multi-cluster and job forwarding
+5. Trying simple workloads with cloud bursting

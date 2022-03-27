@@ -30,9 +30,9 @@ modify a few parameters depending on your cloud account and ssh key.
 
 * Please select a cluster_prefix string that would be unique to you (e.g.: use your initial here).
 * The resource group value needs to be consistent with the one which you use to create your SSH key.
-* The region (may not be required in the future) and zone need to match where your ssh key is created.
-  * a list of supported regions: au-syd,br-sao,ca-tor,eu-de,eu-gb,jp-osa,jp-tok,us-east,us-south
-  * each region has 3 zones (e.g.: us-east-1, us-east-2, us-east-3 for the us-east region)
+* The region (may not be required in the future) and zone *need to match where your ssh key is created in the previous step*.
+  * A list of supported regions: eu-de,eu-gb,us-east,us-south
+  * Each region has 3 zones (e.g.: us-east-1, us-east-2, us-east-3 for the us-east region)
 * Please just use _1_ for _management_node_count_.
 
 To learn more about cluster configuration parameters, please refer to this [tutorial](https://cloud.ibm.com/docs/ibm-spectrum-lsf?topic=ibm-spectrum-lsf-using-hpc-cluster) in Step 4.
