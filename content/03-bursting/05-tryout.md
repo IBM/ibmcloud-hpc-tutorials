@@ -2,7 +2,7 @@
 title: "Try cloud bursting"
 date: 2022-01-06T01:00:00-01:00
 draft: false
-weight: 30 
+weight: 60 
 tags: ["burst"] 
 ---
 

@@ -1,33 +1,12 @@
 ---
-title: "Set up multi-cluster and job forwarding"
-date: 2022-01-05T01:00:00-01:00
+title: "Set up LSF multi-cluster and job forwarding"
+date: 2022-01-06T01:00:00-01:00
 draft: false
-weight: 20 
+weight: 60 
 tags: ["burst"] 
 ---
 
-Set up the LSF multi-cluster and job forwarding. This tutorial assumes that the small on-premise cluster labeled with "OnPremiseCluster" uses a subnet `192.168.3.0/24`. The cluster runs a master node at `192.168.3.21` (on-premise-master) and two single-CPU workers (i.e., up to two CPUs are available for jobs). The cloud cluster labeled with "HPCCluster" uses a subnet `10.248.0.32/27` and its master uses `10.248.0.37` (icgen2host-10-248-0-37) without any static workers created. Both of the configuration directories are in `/opt/ibm/lsf/conf`, but you can change the directory depending on your cluster configuration.
-
-1. The following is an example of the `/etc/hosts` file for the cloud cluster. You need to make sure that the hostnames for the LSF masters are DNS-resolvable.
-
-    ```
-    ...
-    10.248.0.61 icgen2host-10-248-0-61
-    10.248.0.62 icgen2host-10-248-0-62
-    10.248.0.63 icgen2host-10-248-0-63
-
-    192.168.3.21 on-premise-master   # added
-    ```
-
-    For the on-premises `/etc/hosts` file, make sure to add the information about the master node in the cloud cluster:
-
-    ```
-    192.168.3.21 on-premise-master
-    192.168.3.22 on-premise-worker-0
-    192.168.3.23 on-premise-worker-1
-
-    10.248.0.37 icgen2host-10-248-0-37 #added
-    ```
+Set up the LSF multi-cluster and job forwarding. This tutorial assumes that the small on-premise cluster labeled with "OnPremiseCluster" uses a subnet `192.168.3.0/24`. The cluster runs a master node at `192.168.3.21` (on-premise-master) and two single-CPU workers (i.e., up to two CPUs are available for jobs).
 
 2. Both clusters need to recognize each other, so you need to modify `/opt/ibm/lsf/conf/lsf.shared`. This configuration file should be identical in both clusters.
 
@@ -83,4 +62,3 @@ Set up the LSF multi-cluster and job forwarding. This tutorial assumes that the 
     OnPremiseCluster ok       on-premise-master          lsfadmin        3        3
     HPCCluster       ok       icgen2host-10-248-0-37     lsfadmin        1        1
     ```
-
