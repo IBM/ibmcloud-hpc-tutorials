@@ -26,7 +26,29 @@ private clouds, while leveraging public cloud resources and savings.
 | Unit of compute node | A bare-metal node, fixed configuration | A virtual machine instance (VSI), flexible |
 | Interconnect         | Physical Ethernet, Infiniband, etc. | Software defined network         |
 
-When creating a cluster on IBM Cloud, a "VPC" refers to the
-software-defined network at a specific datacenter. Each VPC consists of one or multiple
-subnets, each of which is mapped to a zone within that datacenter. VSIs will be created
-within subnets.
+On this website we focus exclusively on IBM Cloud Gen2 VPC. In such context, a
+"VPC" resource actually refers to the software-defined network at a specific
+datacenter. Unless otherwise indicated, the term "VPC" in this website always
+referred to this narrow definition. Each VPC consists of one or multiple
+subnets, each of which is mapped to a zone within that datacenter. Once the VPC
+is established, VSIs can be created within subnets. Such process is the cloud
+analog to installing a physical cluster - putting physical computer
+nodes inside a server room and connect them with networks so that they can be
+accessed from outside.
+
+While it is possible to build a cluster from basic componenets, there is a
+much easier way to deploy a HPC-oriented cluster on IBM Cloud. In fact,
+Most of the tutorials on this website are based on the automation package for Spectrum LSF.
+[IBM Spectrum LSF](https://www.ibm.com/cloud/blog/announcements/ibm-spectrum-lsf-is-now-available-on-ibm-cloud)
+is widely used to manage parallel distributed HPC workloads. The automation
+package deploys LSF management and compute hosts with a shared filesystem. It
+also configures auto-scaling of compute hosts with its resource connector for
+IBM Cloud. The deployed cluster runs the Red Hat Enterprise Linux 7.7 with
+pre-installed software packages such as OpenMPI.
+
+The automation package enables users to quickly create an HPC cluster on IBM
+Cloud. Users can import data to the shared filesystem and submit HPC jobs using
+the bsub command. The automation can be regarded as a quick starter kit for HPC
+in the cloud, but also it enables cloud bursting, a technique to deal with the
+temporal insufficiency of computing resources at an on-premise cluster using
+the elastic cloud infrastructures.

@@ -3,7 +3,7 @@ title: "Create a second cluster and establish VPN connection"
 date: 2022-01-05T01:00:00-01:00
 draft: false
 weight: 30 
-tags: ["burst"] 
+tags: ["Cloud bursting"] 
 ---
 
 We can now proceed to create the new cluster ("HPCCluster") as the cloud

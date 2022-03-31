@@ -9,7 +9,7 @@ tags: ["LSF"]
 ### Overview of the HPC Cluster
 The HPC Cluster consists of a **login node**, a **storage node** where the block storage volume is being attached to, 1 to 3 **LSF management nodes**, and a number of **LSF worker nodes**. 
 <!--![lsf arch](/images/setup-lsf-cluster/lsf_arch.png) -->
-{{< figure src="/images/setup-lsf-cluster/lsf_arch.png" alt="lsf_arch" width="860" >}}
+{{< figure src="/images/setup-lsf-cluster/lsf_arch.png" alt="lsf_arch" class="img-lg">}}
 
 * The **login node** is served as a jump host and it is the only node which has the public IP address. Other nodes would only have private IP addresses and the only way to reach to these nodes is through the login node. Users should log in to the primary LSF management node (or LSF master) and do most of the operations from the LSF master. By default, lsfadmin is the only user id being created on the cluster. The ssh passwordless setup is configured between the LSF master and workers. Users can reach to any other worker node with the lsfadmin user id from the LSF master. 
 
@@ -26,7 +26,7 @@ You can learn more about IBM Cloud Schematics Solution [here](https://www.ibm.co
 Click on **_Jobs_** and you will be updated with the progress of cluster creation. Once it's completed, you will be given
 a ssh command towards the end of this log file. Go to the terminal where you have your SSH key and run the ssh command.
 You can use _lsid_ to display the LSF cluster information.
-```
+```shell/bash
 % ssh -J root@141.125.159.202  lsfadmin@10.242.64.37
 Last login: Mon Dec  6 14:38:05 2021 from 10.242.64.4
 
@@ -39,4 +39,4 @@ My cluster name is HPCCluster
 My master name is icgen2host-10-242-64-37
 ```
 
-That's it. You are on the LSF management node and the cluster is ready for you to run your HPC workloads.
+That's it! You are on the LSF management node and the cluster is ready for you to run your HPC workloads.

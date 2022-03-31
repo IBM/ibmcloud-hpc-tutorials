@@ -1,5 +1,5 @@
 ---
-title: "Create Your Cluster using IBM Spectrum LSF"
+title: "Create Your Cluster using IBM Spectrum LSF automation package"
 date: 2021-12-08T10:05:34-05:00
 draft: false
 weight: 50 
@@ -7,7 +7,11 @@ tags: ["LSF"]
 ---
 
 
-After you sign in to https://cloud.ibm.com/ with your account, search "HPC" or "Spectrum LSF" in IBM Cloud catalog. Find "IBM Spectrum LSF" and select the service. It will lead you to the HPC Cluster solution page. Or the tile can be directly accessed from [here](https://cloud.ibm.com/catalog/content/terraform-1623200063-71606cab-c6e1-4f95-a47a-2ce541dcbed8-global).
+After you sign in to https://cloud.ibm.com/ with your account, search "HPC" or
+"Spectrum LSF" in IBM Cloud catalog. Find "IBM Spectrum LSF" and select the
+service. It will lead you to the HPC Cluster solution page. The tile can also be
+directly accessed from
+[here](https://cloud.ibm.com/catalog/content/terraform-1623200063-71606cab-c6e1-4f95-a47a-2ce541dcbed8-global).
 
 {{< figure src="/images/setup-lsf-cluster/hpc_catalog.png" alt="HPC Cluster Catalog" class="img-ty">}}
 

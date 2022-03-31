@@ -3,7 +3,7 @@ title: "Set up LSF multi-cluster and job forwarding"
 date: 2022-01-06T01:00:00-01:00
 draft: false
 weight: 40 
-tags: ["burst"] 
+tags: ["Cloud bursting"] 
 ---
 
 We now proceed to set up the LSF multi-cluster and job forwarding.  Both

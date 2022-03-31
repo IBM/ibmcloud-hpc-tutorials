@@ -8,12 +8,13 @@ tags: ["LSF"]
 
 ### Create Your SSL KEY key pair (if you don't have one already)
 
-VSI access do not allow password-based authentication by default, so this step is essential
-for anyone to get access to the VSIs after they are created. If you do not have SSH keys on
-your machine where you plan to log in to your HPC cluster, use the **_ssh-keygen_** command to generate.
-This command is commonly available in modern operating systems and can be run by any user.
+VSI access do not allow password-based authentication by default, so this step
+is essential for anyone to get access to the VSIs after they are created. If
+you do not have SSH keys on your machine where you plan to log in to your HPC
+cluster, use the **_ssh-keygen_** command to generate.  This command is
+commonly available in modern operating systems and can be run by any user.
 In Linux, for example:
-```
+```shell/bash
 $ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/someone/.ssh/id_rsa): 
@@ -22,7 +23,8 @@ Enter same passphrase again: 
 Your identification has been saved in /home/someone/.ssh/id_rsa.
 Your public key has been saved in /home/someone/.ssh/id_rsa.pub.
 ```
-Copy and paste the content in /home/someone/.ssh/id_rsa.pub to the public key field in Step 2 below.
+Copy and paste the content in /home/someone/.ssh/id_rsa.pub to the public key
+field in Step 2 below.
 
 ### Create Your IBM Cloud SSH Key
 This step allows you to upload the public key of your existing public-private SSL key pair.
@@ -67,5 +69,5 @@ API keys are not bound to any specific datacenter.
       3.2. Then, click **__Show__** to display the API key. Or, click **_Copy_** to copy and save it for later, or click **_Download_**
 ![SSHKEY](/images/setup-lsf-cluster/apikey.png)
 
-Please keep the API key saved in Step 3.2 in a secure place. You will need to use this in the next step when creating the cluster.
+Please keep the API key saved in a secure place. You will need to use this in the next step when creating the cluster.
 

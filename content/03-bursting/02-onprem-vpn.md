@@ -3,7 +3,7 @@ title: "Set up VPN for the on-premise cluster"
 date: 2022-01-02T01:00:00-01:00
 draft: false
 weight: 20 
-tags: ["burst"] 
+tags: ["Cloud bursting"] 
 ---
 
 <!--The automation package is implemented as a Terraform template for VPCs on

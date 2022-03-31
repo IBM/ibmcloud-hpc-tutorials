@@ -48,16 +48,15 @@ We look forward to seeing you in the event!
 
 ---
 
-Beyond the HPCA event, this website will evolve into a growing open-source
+Beyond the HPCA event, this website will evolve into an open-source
 documentation project for "HPC on IBM Cloud" topics.  We aim to provide
 tailored, step-by-step tutorials on various tasks in utilizing public cloud
 resources for HPC workloads.  We hope to smooth the learning curve for the
-transition from traditional on-prem HPC clusters to cloud-based or even
+transition from traditional on-premise HPC clusters to cloud-based or even
 cloud-native workflows. Most information here are derived from references and
-tutorials from IBM Cloud's online articles. 
+tutorials from IBM Cloud's online articles.
 
-<!--
-Current topics:
+Topics on this website:
 
 - **Cloud Basics** introduces the building blocks of cloud computing and
   basic preparations for going through the other topics.
@@ -65,12 +64,18 @@ Current topics:
 - **Standing up an LSF Cluster** shows how to set up a HPC cluster on IBM
   Cloud, including how to use the autoscaling capability.
 
-- **Hybrid Cloud Computing** explores the exciting possiblities of leveraging
-  hybrid cloud for HPC
+- **Cloud Bursting** explores the exciting possiblities of leveraging
+  LSF-managed multi-cluster on hybrid cloud.
 
-- **HPC File Systems** discusses the options for a high-performance parallel
-  file system
+- **Custom Image** explains how to create your own custom VSI images hosted
+  on IBM Cloud.
+
+- **(Upcoming) HPC File Systems** discusses the options for a high-performance parallel
+  file system on IBM Cloud.
+
+- **(Upcoming) Performance tuning** provides cloud-specific performance
+  tuning suggestions for HPC applications.
 
 Select a topic from the nagivation panel on the left or continue to *HPC on
 Cloud Overview*.
--->
+

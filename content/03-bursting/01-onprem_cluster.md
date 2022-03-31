@@ -3,7 +3,7 @@ title: "Emulate an on-premise cluster"
 date: 2022-01-02T01:00:00-01:00
 draft: false
 weight: 10 
-tags: ["burst"] 
+tags: ["Cloud bursting"] 
 ---
 
 The first step is to create an LSF cluster in IBM Cloud US-South (Dallas)
