@@ -40,34 +40,45 @@ without any static workers created. Both of the configuration directories are
 in `/opt/ibm/lsf/conf`, but you can change the directory depending on your
 cluster configuration.-->
 
-The next step is to establish the VPN connection from OnPremCluster VPN. "Local"
-corresponds to OnPremCluster and "Peer" corresponds to HPCCluster, as shown below
+The next step is to establish the VPN connection from OnPremCluster VPN. As
+shown below, "Local" corresponds to OnPremCluster and "Peer" corresponds to
+HPCCluster. The same "preshared key" used for creating the HPCCluster's VPN
+must be used.
 
 {{< figure src="/images/bursting/vpn-conn.png" alt="vpn-conn" >}}
 
+Upon creation, it take about a minute before the VPN connection becomes active, as shown below:
 
 {{< figure src="/images/bursting/vpn-conn-active.png" alt="vpn-conn" >}}
 
-Typical VPN configurations require a public IP address for the local VPN server, a local CIDR, a preshared key, a peer IP address, and a peer CIDR. In the example above, you first need to configure your local VPN server with public IP address, local CIDR, and a preshared key, which are identical to what you specified for `vpn_peer_address`, `vpn_peer_cidr`, and `vpn_preshared_key` at Step 1, respectively. Then, your local VPN configuration needs to add a peer IP address to be `163.68.aaa.bbb` and a peer CIDR to be `10.248.0.32/27` according to the output of Step 2. Finally, UDP ports 500 and 4500 must be accessible from the VPN gateway on IBM Cloud by configuring your local network devices (e.g., routers). For more details on configuring your VPN, see [Connecting to your on-premises network](/docs/vpc?topic=vpc-vpn-onprem-example).
+Unlike HPCCluster's subnet, OnPremCluster's subnet is not created without
+an attached VPN. Its UDP ports 500 and 4500 must be manually made
+accessible from outside. This is done by creating an open inbound rule in 
+OnPremCluster's attached security group, as shown below:
 
-1. The following is an example of the `/etc/hosts` file for the cloud cluster. You need to make sure that the hostnames for the LSF masters are DNS-resolvable.
+{{< figure src="/images/bursting/onpremvpn-rule.png" alt="onpremvpn-rule" >}}
 
-    ```
-    ...
-    10.248.0.61 icgen2host-10-248-0-61
-    10.248.0.62 icgen2host-10-248-0-62
-    10.248.0.63 icgen2host-10-248-0-63
+We also need to modify `/etc/hosts` on the management node on both cluster, so that the hostnames for the LSF masters are DNS-resolvable.
+On OnPremCluster:
+```
+...
+10.240.128.21 icgen2host-10-240-128-21
+...
+10.241.128.21 icgen2host-10-241-128-21  # added
+```
 
-    192.168.3.21 on-premise-master   # added
-    ```
+On HPCCluster:
+```
+...
+10.241.128.21 icgen2host-10-241-128-21
+...
+10.240.128.21 icgen2host-10-240-128-21  # added
+```
 
-    For the on-premises `/etc/hosts` file, make sure to add the information about the master node in the cloud cluster:
-
-    ```
-    192.168.3.21 on-premise-master
-    192.168.3.22 on-premise-worker-0
-    192.168.3.23 on-premise-worker-1
-
-    10.248.0.37 icgen2host-10-248-0-37 #added
-    ```
-
+To confirm VPN connection from OnPremCluster:
+```
+[lsfadmin@icgen2host-10-240-128-21 ~]$ ping icgen2host-10-241-128-21
+PING icgen2host-10-241-128-21 (10.241.128.21) 56(84) bytes of data.
+64 bytes from icgen2host-10-241-128-21 (10.241.128.21): icmp_seq=1 ttl=62 time=33.1 ms
+...
+```
