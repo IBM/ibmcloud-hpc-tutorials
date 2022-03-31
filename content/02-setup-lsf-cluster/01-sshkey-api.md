@@ -47,7 +47,7 @@ corner of the page:
 3. Click on **_Add SSH Key_**
 
 ![SSHKEY](/images/setup-lsf-cluster/sshkey.png)
-
+<!--{{< figure src="/images/setup-lsf-cluster/sshkey.png" alt="SSHKEY" class="img-lg">}}-->
 
 Please remember your ssh key name (e.g., demo-ssh-key), the resource group name and the region you have selected. You will need to use
 those in the next step when creating a cluster.

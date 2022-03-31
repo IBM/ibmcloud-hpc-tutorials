@@ -9,10 +9,11 @@ tags: ["LSF"]
 
 After you sign in to https://cloud.ibm.com/ with your account, search "HPC" or "Spectrum LSF" in IBM Cloud catalog. Find "IBM Spectrum LSF" and select the service. It will lead you to the HPC Cluster solution page. Or the tile can be directly accessed from [here](https://cloud.ibm.com/catalog/content/terraform-1623200063-71606cab-c6e1-4f95-a47a-2ce541dcbed8-global).
 
-![HPC Cluster Catalog](/images/setup-lsf-cluster/hpc_catalog.png)
+{{< figure src="/images/setup-lsf-cluster/hpc_catalog.png" alt="HPC Cluster Catalog" class="img-ty">}}
 
 Scroll down to the **Configure your workspace** section.
-![catalog](/images/setup-lsf-cluster/config-ws.png)
+<!--![catalog](/images/setup-lsf-cluster/config-ws.png)-->
+{{< figure src="/images/setup-lsf-cluster/config-ws.png" alt="catalog" class="img-md">}}
 The resource group parameter in this section is where the Schematics workspace is provisioned on your IBM Cloud account. 
 The value for this parameter can be different than the one used for SSH key.
 You can leave the other fields with the default.
@@ -38,4 +39,5 @@ modify a few parameters depending on your cloud account and ssh key.
 To learn more about cluster configuration parameters, please refer to this [tutorial](https://cloud.ibm.com/docs/ibm-spectrum-lsf?topic=ibm-spectrum-lsf-using-hpc-cluster) in Step 4.
 
 Now you are ready to create the cluster. In the bottom right corner of the page, select the license agreements button and click **_Install_**. It will lead to your Schematics workspace and will take few minutes for your cluster to be ready.
-![catalog](/images/setup-lsf-cluster/lsf_install.png)
+<!--![catalog](/images/setup-lsf-cluster/lsf_install.png)-->
+{{< figure src="/images/setup-lsf-cluster/lsf_install.png" alt="lsf_install" class="img-ty">}}

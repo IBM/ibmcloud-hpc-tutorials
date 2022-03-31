@@ -45,18 +45,18 @@ shown below, "Local" corresponds to OnPremCluster and "Peer" corresponds to
 HPCCluster. The same "preshared key" used for creating the HPCCluster's VPN
 must be used.
 
-{{< figure src="/images/bursting/vpn-conn.png" alt="vpn-conn" >}}
+{{< figure src="/images/bursting/vpn-conn.png" alt="vpn-conn" class="img-md">}}
 
 Upon creation, it take about a minute before the VPN connection becomes active, as shown below:
 
-{{< figure src="/images/bursting/vpn-conn-active.png" alt="vpn-conn" >}}
+{{< figure src="/images/bursting/vpn-conn-active.png" alt="vpn-conn-active" class="img-ty">}}
 
 Unlike HPCCluster's subnet, OnPremCluster's subnet is not created without
 an attached VPN. Its UDP ports 500 and 4500 must be manually made
 accessible from outside. This is done by creating an open inbound rule in 
 OnPremCluster's attached security group, as shown below:
 
-{{< figure src="/images/bursting/onpremvpn-rule.png" alt="onpremvpn-rule" >}}
+{{< figure src="/images/bursting/onpremvpn-rule.png" alt="onpremvpn-rule" class="img-lg">}}
 
 We also need to modify `/etc/hosts` on the management node on both cluster, so that the hostnames for the LSF masters are DNS-resolvable.
 On OnPremCluster:

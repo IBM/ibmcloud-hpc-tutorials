@@ -150,4 +150,5 @@ Read file <5.err> for stderr output of this job.
 You can learn more about LSF [here](https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=best-practices-tips). 
 
 Below is a cheat sheet for useful LSF commands:
-![LSF](/images/setup-lsf-cluster/lsf_commands.png)
+<!--![LSF](/images/setup-lsf-cluster/lsf_commands.png)-->
+{{< figure src="/images/setup-lsf-cluster/lsf_commands.png" alt="LSF" class="img-md">}}

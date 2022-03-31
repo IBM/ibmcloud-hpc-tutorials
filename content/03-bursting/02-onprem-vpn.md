@@ -32,7 +32,8 @@ created, to avoid a chicken-and-egg situation.
 
 To find the CIDR, go to the VPC created by LSF automation package ("LSF tile").
 Since us-south-3 is used, the corresponding IP range is `10.240.128.0/18`.
-{{< figure src=/images/bursting/onprem-vpn-vpc.png alt="onprem-vpc" width="320px" >}}
+
+{{< figure src=/images/bursting/onprem-vpn-vpc.png alt="onprem-vpc" class="img-sm">}}
 
 Now select **_VPC Infrastructure_** > **_VPNs_**. In the "VPNs for VPC" page, make
 sure Dallas is selected as the region, and then click **_Create_**. We need to use
@@ -49,7 +50,7 @@ Upon clicking **_Create VPN gateway_**, it takes a moment for the gateway IP to
 be allocated and reveal in the VPN page. This is the gateway IP we will need during
 the creation of the next cluster.
 
-{{< figure src="/images/bursting/onprem-vpn-gatewayip.png" alt="onprem-vpn-ip" >}}
+{{< figure src="/images/bursting/onprem-vpn-gatewayip.png" alt="onprem-vpn-ip" class="img-ty">}}
 
 <!--Also, you need to know the public IP address of your local VPN server, a
 local CIDR accessing the VPN environment, and a preshared key to authenticate

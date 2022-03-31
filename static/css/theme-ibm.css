@@ -148,3 +148,15 @@ a:hover {
 #homelinks a:hover {
   color: var(--MENU-HOME-LINK-HOVERED-color);
 }
+
+.img-ty { max-height: 200px; }
+.img-ty img{ max-height:200px }
+
+.img-sm { max-height: 300px; }
+.img-sm img{ max-height:300px }
+
+.img-md { max-height: 400px; }
+.img-md img{ max-height:400px }
+
+.img-lg { max-height: 500px; }
+.img-lg img{ max-height:500px }
