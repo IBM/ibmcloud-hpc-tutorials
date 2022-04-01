@@ -36,7 +36,42 @@ analog to installing a physical cluster - putting physical computer
 nodes inside a server room and connect them with networks so that they can be
 accessed from outside.
 
-While it is possible to build a cluster from basic componenets, there is a
+{{< figure src="/images/intro/vpc-diagram.png" alt="VPC diagram">}}
+
+##### Region
+A region is an abstraction that is related to the geographic area in which a
+VPC is deployed. VPC can span multiple zones in a region.
+Example: us-south
+
+##### Zone
+A zone is an abstraction that refers to the physical data center that hosts the
+compute, network, and storage resources, as well as the related cooling and
+power, which provides services and applications. Zones are isolated from each
+other.
+Example: us-south-1/2/3
+
+##### Security Groups (SG)
+Set of rules to filter traffic to an instance.
+
+##### Subnet
+Each subnet consists of a specified IP address range (CIDR block). Subnets are
+bound to a single zone and cannot span multiple zones or regions. Subnets
+within the VPC offer private connectivity; they can talk to each other over a
+private link through the implicit router. Setting up routes is not necessary.
+
+##### Public Gateway
+A Public Gateway enables a subnet and all its attached virtual server instances to connect to the internet. 
+
+##### Floating IP
+Floating IP addresses are IP addresses that are provided by the system and are
+reachable from the public internet.
+
+##### Virtual Server Instance (VSI)
+A VSI is basically a virtual machine instance, created from a shared VSI
+profile (template, or base image) provided by the cloud. An VSI have multiple
+states (running, stopped, etc.) during its life cycle.
+
+While it is possible to manually build a cluster from these componenets, there is a
 much easier way to deploy a HPC-oriented cluster on IBM Cloud. In fact,
 Most of the tutorials on this website are based on the automation package for Spectrum LSF.
 [IBM Spectrum LSF](https://www.ibm.com/cloud/blog/announcements/ibm-spectrum-lsf-is-now-available-on-ibm-cloud)
