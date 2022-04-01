@@ -2,11 +2,19 @@
 
 Collection of "HPC on Cloud" tutorials
 
-## Building the Workshop site
+The content of the workshops is rendered by [hugo](https://gohugo.io/).
 
-The content of the workshops is built using [hugo](https://gohugo.io/).
+## Github Pages
 
-To build the content
+The `main` branch is automatically rendered into the HTML website using Github Actions, which is then hosted by Github Pages.
+This rendered website can be accessed directly from
+
+https://ibm.github.io/ibmcloud-hpc-tutorials/
+
+## Building this tutorial website for viewing in a browser on your local computer
+
+You can also render the HTML website by running Hugo locally on your computer. Here are the steps:
+
 1. [Install Hugo](https://gohugo.io/getting-started/installing/). Assuming you have Homebrew installed, on a Mac or Linux (including WSL), simply
 ```bash
 brew install hugo
