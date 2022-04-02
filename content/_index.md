@@ -6,17 +6,17 @@ draft: false
 
 # Welcome to HPCA "HPC on IBM Cloud" Tutorials
 
-### Please secure your IBM Cloud account **NOW**
+### Please secure your IBM Cloud account
 
 HPC on IBM Cloud tutorial includes comprehensive access to IBM Cloud for all
-participants during and shortly after the event. It is highly recommended to
-secure your IBM Cloud account in advance in order to minimize setup time during
-the event. Please follow these steps to apply for your account:
+participants during and shortly after the event until April 15, 2022.
+Application will remain open during HPCA
+(April 2 to 6, 2022). Please follow these steps to apply for your account:
  
 1. **(You will) signup for a new IBMid ONLY (note the email address you use), WITHOUT creating an IBM Cloud account. Link:**
  https://www.ibm.com/account/reg/us-en/signup?formid=urx-19776
 
-2. **(You will) post your email in the Zoom chat window, OR, send us an email including the email address you used for your "new IBMid"**:  
+2. **(You will) send us an email including the email address you used for your "new IBMid"**:  
 - Email recipient: LIXIANG.LUO@ibm.com  
 - Email title: [HPCA] Request for a hands-on account  
 - Email content: the email address you used for your "new IBMid"
