@@ -16,7 +16,7 @@ the event. Please follow these steps to apply for your account:
 1. **(You will) signup for a new IBMid ONLY (note the email address you use), WITHOUT creating an IBM Cloud account. Link:**
  https://www.ibm.com/account/reg/us-en/signup?formid=urx-19776
 
-2. **(You will) send us an email including the email address you used for your "new IBMid"**:  
+2. **(You will) post your email in the Zoom chat window, OR, send us an email including the email address you used for your "new IBMid"**:  
 - Email recipient: LIXIANG.LUO@ibm.com  
 - Email title: [HPCA] Request for a hands-on account  
 - Email content: the email address you used for your "new IBMid"
