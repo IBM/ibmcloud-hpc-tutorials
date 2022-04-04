@@ -6,12 +6,12 @@ draft: false
 
 # Welcome to HPCA "HPC on IBM Cloud" Tutorials
 
-### Please secure your IBM Cloud account
+### UPDATE 4/3/2022: you can still secure your IBM Cloud account during HPCA
 
 HPC on IBM Cloud tutorial includes comprehensive access to IBM Cloud for all
-participants during and shortly after the event until April 15, 2022.
-Application will remain open during HPCA
-(April 2 to 6, 2022). Please follow these steps to apply for your account:
+participants during and shortly after the event until __4/15/2022__.  Application
+will remain open during HPCA (__4/2 ~ 4/6__). Please follow these steps to apply
+for your account:
  
 1. **(You will) signup for a new IBMid ONLY (note the email address you use), WITHOUT creating an IBM Cloud account. Link:**
  https://www.ibm.com/account/reg/us-en/signup?formid=urx-19776
