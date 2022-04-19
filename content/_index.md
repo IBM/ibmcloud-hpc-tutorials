@@ -4,6 +4,10 @@ date: 2019-09-18T10:50:17-04:00
 draft: false
 ---
 
+# Welcome to "HPC on IBM Cloud" Tutorials
+
+<!--
+----- Event intro  -----
 # Welcome to HPCA "HPC on IBM Cloud" Tutorials
 
 ### UPDATE 4/3/2022: you can still secure your IBM Cloud account during HPCA
@@ -48,7 +52,10 @@ We look forward to seeing you in the event!
 
 ---
 
-Beyond the HPCA event, this website will evolve into an open-source
+Beyond the HPCA event, this website will evolve into
+-->
+
+This website is an open-source
 documentation project for "HPC on IBM Cloud" topics.  We aim to provide
 tailored, step-by-step tutorials on various tasks in utilizing public cloud
 resources for HPC workloads.  We hope to smooth the learning curve for the
