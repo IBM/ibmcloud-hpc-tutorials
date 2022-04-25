@@ -44,12 +44,17 @@ url = "/ibmcloud-hpc-tutorials/authors/"
 weight = 30
 
 [[menu.shortcuts]]
+name = "<i class='fas fa-bullhorn'></i> External links"
+url = "/ibmcloud-hpc-tutorials/external/"
+weight = 40
+
+[[menu.shortcuts]]
 name = "<i class='fas fa-envelope'></i> Feedback / Questions?"
 url = "https://github.com/IBM/ibmcloud-hpc-tutorials/issues"
-weight = 40
+weight = 50
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/ibmcloud-hpc-tutorials/tags"
-weight = 50
+weight = 60
 

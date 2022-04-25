@@ -1,11 +1,15 @@
 ---
-title: External Workshops
+title: External links
 disableToc: true
 ---
 
-#### List of External workshops
+#### List of related workshops
 
-| Name | Description |
-|------|-------------|
-|[Advanced Slurm on ParallelCluster](https://catalog.us-east-1.prod.workshops.aws/v2/workshops/d431e0b1-9f08-4d82-822e-ea56962b2a0b/en-US) | This workshop shows advanced techniques with Slurm on ParallelCluster, including federation, accounting, and using the Slurm REST API with Jupyter notebooks |
-|[Setting up a client library for the Slurm REST API](https://github.com/aws-samples/aws-research-workshops/blob/mainline/notebooks/parallelcluster/pcluster-slurmrestclient.ipynb) | A Jupyter notebook walkthrough of building and using a Python client library for the Slurm REST API |
+#### List of publications
+
+[How to setup HPC Cluster in IBM Cloud](https://www.ibm.com/cloud/blog/how-to-deploy-an-ibm-spectrum-lsf-cluster-on-ibm-cloud)  
+[WRF Workload Evaluation on IBM Cloud High Performance Computing Cluster](https://cloud.ibm.com/media/docs/downloads/hpc/HPCC_WRF_workload_report.pdf)  
+[Running OpenFOAM on IBM Cloud](https://www.ibm.com/cloud/blog/running-openfoam-on-ibm-cloud)  
+[Disable Hyper-Threading in IBM Cloud](https://www.ibm.com/cloud/blog/disable-hyper-threading-in-ibm-cloud)
+[How to use V100 GPUs on IBM Cloud](https://www.ibm.com/cloud/blog/how-to-use-v100-based-gpus-on-ibm-cloud-vpc)  
+[IBM and Synopsys Demonstrate EUV OPC Workload Runs >11,000 Cores on the Hybrid Cloud](https://www.ibm.com/cloud/blog/ibm-and-synopsys-demonstrate-euv-opc-workload-runs-11000-cores-on-the-hybrid-cloud)  
